@@ -100,7 +100,7 @@ jobs.json              # Job listings data (flat-file storage)
 
 ## Security Notes
 
-- **Change default password** in `config.js` before deployment
+- **Configure admin credentials securely` before deployment
 - **Admin panel is accessible** to anyone who knows the credentials
 - **No server-side validation** - all validation is client-side
 - **Suitable for simple use cases** where security isn't critical
