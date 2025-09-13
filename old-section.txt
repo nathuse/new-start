@@ -1,0 +1,4 @@
+﻿        case 'jobs':
+            loadJobs();
+            break;
+    }

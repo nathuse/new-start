@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabu Construction - Building Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Responsive Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="frontend/image/photo_2025-08-04_17-33-00.jpg" alt="TABU Construction Logo" class="nav-logo">
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation Menu -->
+            <ul class="nav-menu desktop-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#equipments" class="nav-link">Equipments</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link" id="openVisionMissionModal">Vision & Mission</a></li>
+                <li><a href="#" class="nav-link" id="openOrgStructureModal">Organizational Structure</a></li>
+            </ul>
+            
+            <!-- Mobile Hamburger Button -->
+            <button class="hamburger-btn mobile-only" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Side Menu Overlay (Mobile Only) -->
+        <div class="side-menu-overlay" id="sideMenuOverlay"></div>
+        
+        <!-- Side Menu Panel (Mobile Only) -->
+        <div class="side-menu-panel" id="sideMenuPanel">
+            <div class="side-menu-header">
+                <button class="close-menu-btn" id="closeMenuBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <ul class="side-menu-links">
+                <li><a href="#home" class="side-menu-link"><i class="fas fa-home me-2"></i>Home</a></li>
+                <li><a href="#about" class="side-menu-link"><i class="fas fa-info-circle me-2"></i>About</a></li>
+                <li><a href="#services" class="side-menu-link"><i class="fas fa-cogs me-2"></i>Services</a></li>
+                <li><a href="#projects" class="side-menu-link"><i class="fas fa-project-diagram me-2"></i>Projects</a></li>
+                <li><a href="#equipments" class="side-menu-link"><i class="fas fa-tools me-2"></i>Equipments</a></li>
+                <li><a href="#contact" class="side-menu-link"><i class="fas fa-envelope me-2"></i>Contact</a></li>
+                <li><a href="#" class="side-menu-link" id="openVisionMissionModalMobile"><i class="fas fa-eye me-2"></i>Vision & Mission</a></li>
+                <li><a href="#" class="side-menu-link" id="openOrgStructureModalMobile"><i class="fas fa-sitemap me-2"></i>Organizational Structure</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" id="main-content">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Premium Construction Services</span>
+                </div>
+                <h1 class="hero-title">
+                    Building Dreams with
+                    <span class="gradient-text">TABU</span>
+                    Excellence
+                </h1>
+                <p class="hero-description">
+                    We transform architectural visions into stunning realities through innovative construction solutions, 
+                    superior craftsmanship, and unwavering commitment to quality.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Start Your Project</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        <span>View Our Work</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">97%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="frontend/image/photo_2025-08-04_17-33-00.jpg" alt="TABU Construction Hero Image" class="hero-img">
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fas fa-hammer"></i>
+                        <span>Quality Build</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-clock"></i>
+                        <span>On Time</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-badge">About TABU</div>
+                    <h2 class="section-title">
+                        Crafting Excellence in 
+                        <span class="gradient-text">Construction</span>
+                    </h2>
+                    <p class="section-description">
+                        For over 15 years, TABU Construction has been at the forefront of innovative building solutions. 
+                        We combine traditional craftsmanship with cutting-edge technology to deliver projects that exceed expectations.
+                    </p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Licensed & Insured</h4>
+                                <p>Fully licensed contractors with comprehensive insurance coverage</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Expert Team</h4>
+                                <p>Skilled professionals with decades of combined experience</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Quality Materials</h4>
+                                <p>Premium materials sourced from trusted suppliers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">Learn More About Us</a>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image-grid">
+                        <div class="about-image main-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                        </div>
+                        <div class="about-image secondary-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                        </div>
+                        <div class="experience-badge">
+                            <div class="badge-number">10+</div>
+                            <div class="badge-text">Years of Excellence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Services</div>
+                <h2 class="section-title">
+                    Comprehensive Construction 
+                    <span class="gradient-text">Solutions</span>
+                </h2>
+                <p class="section-description">
+                    From residential homes to commercial complexes, we deliver exceptional results across all construction sectors
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="service-badge">Most Popular</div>
+                    </div>
+                    <h3 class="service-title">Residential Construction</h3>
+                    <p class="service-description">
+                        Custom homes designed and built to your exact specifications with attention to every detail.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Home Design</li>
+                        <li><i class="fas fa-check"></i> New Construction</li>
+                        <li><i class="fas fa-check"></i> Home Additions</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Commercial Buildings</h3>
+                    <p class="service-description">
+                        Modern commercial spaces that combine functionality with impressive architectural design.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Office Buildings</li>
+                        <li><i class="fas fa-check"></i> Retail Spaces</li>
+                        <li><i class="fas fa-check"></i> Warehouses</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Renovation & Remodeling</h3>
+                    <p class="service-description">
+                        Transform existing spaces with our expert renovation and remodeling services.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Kitchen Remodeling</li>
+                        <li><i class="fas fa-check"></i> Bathroom Renovation</li>
+                        <li><i class="fas fa-check"></i> Full Home Makeover</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Design & Planning</h3>
+                    <p class="service-description">
+                        Complete architectural design and project planning services from concept to completion.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Architectural Design</li>
+                        <li><i class="fas fa-check"></i> Project Planning</li>
+                        <li><i class="fas fa-check"></i> 3D Visualization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Portfolio</div>
+                <h2 class="section-title">
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="section-description">
+                    Explore our portfolio of successful projects that showcase our commitment to excellence and innovation in construction
+                </p>
+            </div>
+
+            <!-- Project Filter Tabs -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Main Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+                <button class="filter-btn" data-filter="Gallery" id="gallery-btn">Gallery</button>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="projects-grid">
+                 <!-- Project Filter Tabs -->
+                <div class="project-card featured" data-category="commercial">
+                    <div class="project-image">
+                        <img src="https://www.thereporterethiopia.com/wp-content/uploads/2025/04/NBE-AUDIT-REVEALS-SCALE-OF-FOREX-1.jpg" alt="Modern Office Complex" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <div class="project-meta">
+                                    <span class="project-category">Commercial</span>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Downtown</span>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Modern Office Complex</h3>
+                                <p class="project-description">
+                                    A 50,000 sq ft state-of-the-art office building featuring sustainable design, 
+                                    smart building technology, and modern amenities for the future of work.
+                                </p>
+                                <div class="project-features">
+                                    <span class="feature-tag">LEED Certified</span>
+                                    <span class="feature-tag">Smart Building</span>
+                                    <span class="feature-tag">50,000 sq ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Project Cards -->
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTguvtFpGQR4UndOm2KF-I0la8jbO1l3njjoA&s" alt="Luxury Villa Estate" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <div class="project-meta">
+                                    <span class="project-category">Residential</span>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Suburbs</span>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Luxury Villa Estate</h3>
+                                <p class="project-description">
+                                    Custom-built 5-bedroom luxury home with contemporary architecture and premium finishes.
+                                </p>
+                                <div class="project-features">
+                                    <span class="feature-tag">5 Bedrooms</span>
+                                    <span class="feature-tag">Pool & Spa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <img src="https://thumbs.dreamstime.com/b/addis-ababa-ethiopia-january-modern-building-down-addis-ababa-ethiopia-january-modern-building-downtown-addis-ababa-shopping-118320200.jpg" alt="Shopping Center" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <div class="project-meta">
+                                    <span class="project-category">Retail</span>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Mall District</span>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Shopping Center</h3>
+                                <p class="project-description">
+                                    Modern retail complex with innovative design and sustainable features.
+                                </p>
+                                <div class="project-features">
+                                    <span class="feature-tag">25 Stores</span>
+                                    <span class="feature-tag">Eco-Friendly</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="industrial">
+                    <div class="project-image">
+                        <img src="https://ethiopianbusinessreview.net/wp-content/uploads/2023/10/161712930_1314887628911856_8736474143031036890_n-1-e1697198919903.jpg" alt="Distribution Center" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <div class="project-meta">
+                                    <span class="project-category">Industrial</span>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-calendar"></i> 2022</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Industrial Park</span>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Distribution Center</h3>
+                                <p class="project-description">
+                                    Large-scale warehouse facility with advanced logistics and automation systems.
+                                </p>
+                                <div class="project-features">
+                                    <span class="feature-tag">100,000 sq ft</span>
+                                    <span class="feature-tag">Automated</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <img src="https://addisbiz.com/wp-content/uploads/40_60-condominium-in-Addis-ababa-ethiopia-2.jpg" alt="Urban Apartments" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <div class="project-meta">
+                                    <span class="project-category">Residential</span>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-calendar"></i> 2023</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> City Center</span>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Urban Apartments</h3>
+                                <p class="project-description">
+                                    Modern apartment complex with 50 units and premium amenities.
+                                </p>
+                                <div class="project-features">
+                                    <span class="feature-tag">50 Units</span>
+                                    <span class="feature-tag">Rooftop Garden</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <img src="https://washhealthcare.com/sites/default/files/whc-uploads/bulbula-04.jpg" alt="Medical Center" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <div class="project-meta">
+                                    <span class="project-category">Healthcare</span>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-calendar"></i> 2022</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Medical District</span>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">Medical Center</h3>
+                                <p class="project-description">
+                                    State-of-the-art medical facility with advanced healthcare technology.
+                                </p>
+                                <div class="project-features">
+                                    <span class="feature-tag">Medical Grade</span>
+                                    <span class="feature-tag">Emergency Ready</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-bottom">
+                <div class="projects-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Awards Won</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">On-Time Delivery</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-cta">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="#" class="btn btn-outline">View All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Equipments Section -->
+        <section id="equipments" class="equipments">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Our Equipment Fleet</div>
+                    <h2 class="section-title">
+                        State-of-the-Art <span class="gradient-text">Construction Equipment</span>
+                    </h2>
+                    <p class="section-description">
+                        We maintain a comprehensive fleet of modern construction equipment to ensure efficient, 
+                        safe, and high-quality project delivery across all construction phases.
+                    </p>
+                </div>
+    
+                <div class="equipment-grid" id="equipmentGridPublic">
+                    <!-- Excavation Equipment -->
+                    <div class="equipment-card" data-category="excavation">
+                        <div class="equipment-image">
+                            <img src="https://mmi.co.zw/wp-content/uploads/2020/08/komatsu-excavators-pc270-8-hydraulic-excavator-Zimbabwe.jpg" alt="Excavator" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Hydraulic Excavators</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                Heavy-duty excavators for digging, demolition, and material handling with precision control.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-weight-hanging"></i>
+                                    <span>20-40 Tons</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>360° Rotation</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">GPS Tracking</span>
+                                <span class="feature-tag">Fuel Efficient</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="equipment-card" data-category="excavation">
+                        <div class="equipment-image">
+                            <img src="https://fivestarequipment.com/wp-content/uploads/2024/11/adobestock_179719754-scaled.jpeg" alt="Bulldozer" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Bulldozers</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                Powerful track-type bulldozers for earthmoving, grading, and site preparation tasks.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-horse-head"></i>
+                                    <span>400+ HP</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-ruler"></i>
+                                    <span>12ft Blade</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">Auto Grade</span>
+                                <span class="feature-tag">Heavy Duty</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="equipment-card" data-category="transport">
+                        <div class="equipment-image">
+                            <img src="https://www.my-equipment.com/blog/wp-content/uploads/2019/10/images.jpg" alt="Wheel Loader" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Wheel Loaders</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-truck-loading"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                Versatile wheel loaders for material handling, loading trucks, and site maintenance.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-cube"></i>
+                                    <span>5-8 m³ Bucket</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-arrows-alt-v"></i>
+                                    <span>4m Lift Height</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">4WD</span>
+                                <span class="feature-tag">Quick Coupler</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="equipment-card" data-category="lifting">
+                        <div class="equipment-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPY4UYuqyqL79dFwvsh3h648UCtxuZNaZ7MA&s" alt="Mobile Crane" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Mobile Cranes</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-arrows-alt"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                High-capacity mobile cranes for lifting and placing heavy materials at construction sites.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-weight"></i>
+                                    <span>50-200 Tons</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-arrows-alt-v"></i>
+                                    <span>60m Boom</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">All Terrain</span>
+                                <span class="feature-tag">Load Monitor</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="equipment-card" data-category="transport">
+                        <div class="equipment-image">
+                            <img src="https://www.sinoheavyvehicles.com/pic/big/539_0.jpg" alt="Dump Truck" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Dump Trucks</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                Heavy-duty dump trucks for efficient material transport and site logistics.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-box"></i>
+                                    <span>25-40 m³</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-weight-hanging"></i>
+                                    <span>30-50 Tons</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">Auto Tarp</span>
+                                <span class="feature-tag">GPS Fleet</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="equipment-card" data-category="compaction">
+                        <div class="equipment-image">
+                            <img src="https://lectura.press/media-storage/press_releases/cm20201211_7766d_836e6(2cb).jpg" alt="Compactor" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Soil Compactors</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-compress-arrows-alt"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                Vibratory rollers and compactors for soil and asphalt compaction work.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-weight"></i>
+                                    <span>10-20 Tons</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-wave-square"></i>
+                                    <span>Vibratory</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">Articulated</span>
+                                <span class="feature-tag">Smooth Drum</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="equipment-card" data-category="lifting">
+                        <div class="equipment-image">
+                            <img src="https://www.sjf.com/fork-lifts/all-terrain-forklift-3.webp" alt="Forklift" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Rough Terrain Forklifts</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-dolly"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                All-terrain forklifts for material handling in challenging construction environments.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-weight"></i>
+                                    <span>3-10 Tons</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-arrows-alt-v"></i>
+                                    <span>6-17m Lift</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">Telescopic</span>
+                                <span class="feature-tag">4WD</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="equipment-card" data-category="excavation">
+                        <div class="equipment-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_qhClbLRfVljXRSOiJO9xnsmylsjKEUNpKw&s" alt="Skid Steer" class="equipment-img">
+                        </div>
+                        <div class="equipment-content">
+                            <div class="equipment-header">
+                                <h3 class="equipment-title">Skid Steer Loaders</h3>
+                                <div class="equipment-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                            </div>
+                            <p class="equipment-description">
+                                Compact and versatile skid steers with multiple attachment options for tight spaces.
+                            </p>
+                            <div class="equipment-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-horse-head"></i>
+                                    <span>60-100 HP</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-tools"></i>
+                                    <span>Multi-Attach</span>
+                                </div>
+                            </div>
+                            <div class="equipment-features">
+                                <span class="feature-tag">Compact</span>
+                                <span class="feature-tag">Quick Change</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Equipment Services -->
+                <div class="equipment-services">
+                    <div class="services-header">
+                        <h3>Equipment Services & Support</h3>
+                        <p>Comprehensive equipment solutions for all your construction needs</p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <h4>Maintenance & Repair</h4>
+                            <p>24/7 preventive maintenance and emergency repair services</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h4>Operator Training</h4>
+                            <p>Certified training programs for safe equipment operation</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4>Equipment Delivery</h4>
+                            <p>Fast and reliable equipment transportation to your site</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>24/7 Support</h4>
+                            <p>Round-the-clock technical support and assistance</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Joint-Venture Partnerships</h4>
+                            <p>Establishing joint-venture investment projects with various international companies with emphasis on construction related areas.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="equipment-cta">
+                    <div class="cta-content">
+                        <h3>Need Equipment for Your Project?</h3>
+                        <p>Contact us to discuss your equipment requirements and get a customized quote</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="#contact" class="btn btn-primary">Request Equipment Quote</a>
+                        <a href="tel:+251911111111" class="btn btn-outline">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-background">
+            <div class="contact-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <div class="section-badge">Get In Touch</div>
+                    <h2 class="section-title">
+                        Ready to Start Your 
+                        <span class="gradient-text">Dream Project?</span>
+                    </h2>
+                    <p class="section-description">
+                        Let's transform your vision into reality. Our expert team is ready to guide you through every step of your construction journey.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-info-header">
+                            <h3>Let's Talk</h3>
+                            <p>We're here to help bring your construction dreams to life</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Call Us</h4>
+                                    <p>+251 911-111-1111</p>
+                                    <span>Mon - Fri, 8AM - 6PM</span>
+                                </div>
+                                <a href="tel:+15551234567" class="method-action">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Email Us</h4>
+                                    <p>tabuconstruction123@gmail.com</p>
+                                    <span>We'll respond within 24 hours</span>
+                                </div>
+                                <a href="mailto:tabuconstruction123@gmail.com" class="method-action">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Visit Our Office</h4>
+                                    <p>BOLE around WOLLO round about.<br>WOOLO Building City</p>
+                                </div>
+                                <a href="https://maps.app.goo.gl/ibX8VMq4GU6ZS71s8" target="_blank" class="method-action">
+                                    <i class="fas fa-directions"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <h4>Follow Our Journey</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/" target="_blank" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.youtube.com/" target="_blank" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="trust-indicators">
+                            <div class="trust-item">
+                                <div class="trust-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="trust-content">
+                                    <strong>Fully Licensed</strong>
+                                    <span>& Insured Company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Listings -->
+                    <div class="contact-form-container">
+                        <div class="form-card">
+                            <div class="form-header">
+                                <h3>Career Opportunities</h3>
+                                <p>Join our team of construction professionals and be part of building Ethiopia's future</p>
+                            </div>
+
+                            <div class="jobs-list" id="jobsList">
+                                <!-- Job listings will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Help button removed - replaced with job listings -->
+
+                <!-- Bidding process modal removed - replaced with job listings -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://www.tabuconstruction.com/wp-content/uploads/2023/09/tabu-construction-logo-white.png" alt="Tabu Construction Logo" class="footer-logo">
+                    <p>Your Trusted Partner in Construction Excellence</p>
+                    <p>Our firm is at present ready to give construction services related to Building, Water Works Construction and other Civil works. </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Equipment</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>BOLE around WOLLO round about, WOOLO Building City</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+251 911-111-1111</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tabuconstruction123@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2023 Tabu Construction. All rights reserved.</p>
+                    <div class="footer-nav">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                        <a href="frontend/admin.html">Admin Panel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vision & Mission Modal -->
+    <div class="modal-overlay" id="visionMissionModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Our Vision, Mission & Values</h3>
+            <button class="modal-close" id="closeVisionMissionModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="vmv-grid">
+                <div class="vmv-card" id="openVisionModal">
+                    <div class="vmv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2>Vision</h2>
+                </div>
+                <div class="vmv-card" id="openMissionModal">
+                    <div class="vmv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2>Mission</h2>
+                </div>
+                <div class="vmv-card" id="openValueModal">
+                    <div class="vmv-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2>Values</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vision Modal -->
+<div class="modal-overlay" id="visionModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Our Vision</h3>
+            <button class="modal-close" id="closeVisionModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="vision-content">
+                <div class="vision-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="vision-text">
+                    <p id="visionStatement"><strong>TO BE THE LEADING MOST PREFERRED WORLD CLASS CONSTRUCTION COMPANY DRIVEN BY QUALITY WORKMANSHIP AND HIGH DEGREE OF PROFESSIONALISM.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mission Modal -->
+<div class="modal-overlay" id="missionModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Our Mission</h3>
+            <button class="modal-close" id="closeMissionModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="mission-content">
+                <div class="mission-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="mission-text">
+                    <p id="missionStatement"><strong>TO RELENTLESSLY CONTRIBUTE TOWARDS MODERN INFRASTRUCTURAL DEVELOPMENT IN ETHIOPIA AND BEYOND.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Values Modal -->
+<div class="modal-overlay" id="valueModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Our Core Values</h3>
+            <button class="modal-close" id="closeValueModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="values-content">
+                <div class="values-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="values-text">
+                    <p id="valuesStatement"><strong>•	QUALITY WORKMANSHIP - PROFESSIONALISM - INTEGRITY<br>
+                       <br>•	COMMITMENT TO SERVICE EXCELLENCE<br>
+                        •	GROWTH & INNOVATION<br>
+                        •	TEAMWORK<br>
+                        •	SOCIAL & PEOPLE ORIENTATED<br>
+                        •	COMMUNICATION<br>
+                        •	WE BELIEVE IN TEEM WORK; IMPARTIALITY AND INTEGRITY ARE OUR CORE VALUES.<br>
+                        •	LEADERSHIP IS CRITICAL TO THE ATTAINMENT OF OBJECTIVES AND WE MAKE EVERY EFFORT TO DEVELOP CAPABLE AND EFFECTIVE LEADERS.<br>
+                        •	BUILDING GREAT PROJECTS, WITH GREAT TEAMS, CREATING AND MAINTAINING GREAT RELATIONSHIPS, OF GREAT VALUE AND FOR THE GREAT PEOPLE. </strong>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Organizational Structure Modal -->
+<div class="modal-overlay" id="orgStructureModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Organizational Structure</h3>
+            <button class="modal-close" id="closeOrgStructureModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="org-structure-content">
+                <div class="org-structure-image">
+                    <img src="frontend/image/2025-08-04 22_43_08-TABU COMPANY PROFILE.docx (Protected View) - Word.png" alt="TABU Construction Organizational Structure" class="org-structure-img" id="orgStructureImg">
+                    <button class="fullscreen-btn" id="fullscreenBtn" title="View in Full Screen">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fullscreen Image Modal -->
+<div class="fullscreen-overlay" id="fullscreenOverlay">
+    <div class="fullscreen-content">
+        <img src="frontend/image/2025-08-04 22_43_08-TABU COMPANY PROFILE.docx (Protected View) - Word.png" alt="TABU Construction Organizational Structure" class="fullscreen-img" id="fullscreenImg">
+        <button class="fullscreen-close" id="fullscreenClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Job Application Modal -->
+<div class="modal-overlay" id="jobApplicationModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="jobApplicationTitle">Apply for Position</h2>
+            <button class="modal-close" id="closeJobApplicationModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form id="jobApplicationForm" enctype="multipart/form-data">
+                <input type="hidden" id="jobId" name="jobId">
+                
+                <div class="form-group">
+                    <label for="applicantName">Full Name *</label>
+                    <input type="text" id="applicantName" name="fullName" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicantEmail">Email Address *</label>
+                    <input type="email" id="applicantEmail" name="email" required placeholder="your.email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicantPhone">Phone Number *</label>
+                    <input type="tel" id="applicantPhone" name="phone" required placeholder="(123) 456-7890">
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicantExperience">Years of Experience</label>
+                    <select id="applicantExperience" name="experience">
+                        <option value="">Select experience level</option>
+                        <option value="0-1">0-1 years</option>
+                        <option value="2-3">2-3 years</option>
+                        <option value="4-5">4-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="10+">10+ years</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="applicantResume">Resume/CV *</label>
+                    <div class="file-input-container">
+                        <input type="file" id="applicantResume" name="resume" accept=".pdf,.doc,.docx" required>
+                        <label class="file-input-label" for="applicantResume">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Click to upload your resume</span>
+                            <small>Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" onclick="closeJobApplicationModal()">Cancel</button>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Lightbox Modal - Handled by JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+    // Modal functionality now handled by script.js initializeModals() function
+
+    // Fullscreen functionality now handled by script.js initializeModals() function
+    // Ensure fullscreen overlay is not active when opening gallery modal
+    const galleryBtnEl = document.getElementById('gallery-btn');
+    if (galleryBtnEl) {
+        galleryBtnEl.addEventListener('click', function() {
+            const fs = document.getElementById('fullscreenOverlay');
+            if (fs && fs.classList.contains('active')) {
+                fs.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+{
+  "jobs": [
+    {
+      "id": "job-001",
+      "title": "Senior Construction Manager",
+      "department": "Construction Management",
+      "location": "Addis Ababa, Ethiopia",
+      "type": "Full-time",
+      "experience": "5-8 years",
+      "salary": "Competitive salary with benefits",
+      "description": "We are seeking an experienced Construction Manager to oversee large-scale construction projects. The ideal candidate will have strong leadership skills and experience in managing construction teams.",
+      "requirements": [
+        "Bachelor's degree in Civil Engineering or Construction Management",
+        "Minimum 5 years of construction management experience",
+        "Strong project management and leadership skills",
+        "Excellent communication and problem-solving abilities",
+        "Knowledge of construction safety regulations"
+      ],
+      "responsibilities": [
+        "Oversee all aspects of construction projects from planning to completion",
+        "Manage project budgets, timelines, and quality standards",
+        "Coordinate with architects, engineers, and subcontractors",
+        "Ensure compliance with safety regulations and building codes",
+        "Lead and motivate construction teams"
+      ],
+      "benefits": [
+        "Competitive salary package",
+        "Health insurance",
+        "Professional development opportunities",
+        "Performance bonuses",
+        "Flexible work arrangements"
+      ],
+      "postedDate": "2024-01-15",
+      "status": "active"
+    },
+    {
+      "id": "job-002",
+      "title": "Site Engineer",
+      "department": "Engineering",
+      "location": "Bahir Dar, Ethiopia",
+      "type": "Full-time",
+      "experience": "2-4 years",
+      "salary": "Attractive salary package",
+      "description": "Join our engineering team as a Site Engineer to work on exciting construction projects. This role involves technical supervision and quality control on construction sites.",
+      "requirements": [
+        "Bachelor's degree in Civil Engineering",
+        "2-4 years of site engineering experience",
+        "Strong technical knowledge of construction methods",
+        "Proficiency in AutoCAD and construction software",
+        "Excellent attention to detail"
+      ],
+      "responsibilities": [
+        "Provide technical supervision on construction sites",
+        "Review and approve construction drawings and specifications",
+        "Conduct quality control inspections",
+        "Coordinate with project managers and contractors",
+        "Prepare technical reports and documentation"
+      ],
+      "benefits": [
+        "Competitive salary",
+        "Health and dental insurance",
+        "Training and certification programs",
+        "Career advancement opportunities",
+        "Transportation allowance"
+      ],
+      "postedDate": "2024-01-20",
+      "status": "active"
+    },
+    {
+      "id": "job-003",
+      "title": "Heavy Equipment Operator",
+      "department": "Operations",
+      "location": "Hawassa, Ethiopia",
+      "type": "Full-time",
+      "experience": "1-3 years",
+      "salary": "Competitive hourly rate",
+      "description": "We are looking for skilled Heavy Equipment Operators to join our operations team. Experience with excavators, bulldozers, and cranes is required.",
+      "requirements": [
+        "Valid heavy equipment operator license",
+        "1-3 years of experience operating construction equipment",
+        "Knowledge of safety procedures and regulations",
+        "Physical fitness and ability to work in outdoor conditions",
+        "Reliable and punctual"
+      ],
+      "responsibilities": [
+        "Operate heavy construction equipment safely and efficiently",
+        "Perform routine maintenance and inspections",
+        "Follow safety protocols and procedures",
+        "Coordinate with site supervisors and other operators",
+        "Maintain equipment logs and records"
+      ],
+      "benefits": [
+        "Competitive hourly wages",
+        "Overtime opportunities",
+        "Safety equipment provided",
+        "Health insurance",
+        "Performance bonuses"
+      ],
+      "postedDate": "2024-01-25",
+      "status": "active"
+    }
+  ]
+} 

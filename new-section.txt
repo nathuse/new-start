@@ -1,0 +1,7 @@
+﻿        case 'jobs':
+            loadJobs();
+            break;
+        case 'applicantsSection':
+            loadApplicants();
+            break;
+    }
